@@ -9,6 +9,7 @@
 
     <title>Blackbeans</title>
     <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="carousel.css">
     
   </head>
 
@@ -143,9 +144,24 @@
         <div class="title">
           <img src="img/showcase@2x.png" class="title-showcase" alt="showcase">
         </div>
-        <a href="http://www.julejie.com">
-          <img src="img/julejie@2x.png" class="case" alt="聚乐街">
-        </a>
+        <div id="carousel-showcase" class="carousel slide" data-ride="carousel">
+          <ol class="carousel-indicators">
+            <li data-target="#carousel-showcase" data-slide-to="0" class="active"></li>
+            <li data-target="#carousel-showcase" data-slide-to="1"></li>
+          </ol>
+          <div class="carousel-inner" role="listbox">
+            <div class="item active">
+              <a href="http://www.julejie.com" target="blank">
+                <img src="img/julejie@2x.png" class="case" alt="聚乐街">
+              </a>
+            </div>
+            <div class="item">
+              <a href="http://mis.coscoman.cn" target="blank">
+                <img src="img/chuanyuan@2x.png" class="case" alt="船员管理系统">
+              </a>
+            </div>
+          </div>
+        </div>
       </div>
       <div id="contactus" class="hidden"></div>  
     </div>
@@ -174,6 +190,8 @@
     </div>
   </body>
   <script language="javascript" src="jquery-1.10.2.min.js"></script>
+  <script language="javascript" src="transition.js"></script>
   <script language="javascript" src="scrollspy.js"></script>
+  <script language="javascript" src="carousel.js"></script>
   <script language="javascript" src="main.js"></script>
 </html>

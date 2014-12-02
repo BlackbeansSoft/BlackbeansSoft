@@ -21,4 +21,6 @@ $(function () {
   $('.btn-scroll-down').click(function() {
     $('html, body').animate({scrollTop: 672}, 500);
   });
+
+  $('.carousel').carousel();
 })
